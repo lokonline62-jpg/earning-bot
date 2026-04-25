@@ -2,7 +2,7 @@ import json
 from telegram import *
 from telegram.ext import *
 
-TOKEN = ""
+TOKEN = "8618363945:AAE-Wwzt8ZsHywVB45Zg3AmE5ZdfrB5G_Sg"
 ADMIN_ID = 8783092908
 BOT_USERNAME = "@FREEINCOME009879_BOT"
 
