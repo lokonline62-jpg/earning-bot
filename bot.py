@@ -6,6 +6,7 @@ TOKEN = os.getenv("TOKEN")
 
 users = {}
 
+# /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     uid = str(user.id)
@@ -20,6 +21,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text("Welcome Bot 🚀", reply_markup=menu)
 
+# Message handler
 async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = str(update.effective_user.id)
     text = update.message.text
@@ -34,6 +36,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text == "💸 Withdraw":
         await update.message.reply_text("Minimum withdraw not set yet.")
 
+# Main function
 def main():
     app = ApplicationBuilder().token(TOKEN).build()
 
@@ -43,6 +46,6 @@ def main():
     print("Bot running...")
     app.run_polling()
 
+# Correct entry point
 if __name__ == "__main__":
-    main()if __name__ == "__main__":
     main()
