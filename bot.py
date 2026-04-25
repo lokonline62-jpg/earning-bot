@@ -1,10 +1,11 @@
+import os
 import json
 from telegram import *
 from telegram.ext import *
 
-TOKEN = "8618363945:AAE-Wwzt8ZsHywVB45Zg3AmE5ZdfrB5G_Sg"
+TOKEN = os.getenv("TOKEN")
 ADMIN_ID = 8783092908
-BOT_USERNAME = "@FREEINCOME009879_BOT"
+BOT_USERNAME = "FREEINCOME009879_BOT"
 
 GROUP_1_ID = -1001234567890
 GROUP_2_ID = -1009876543210
